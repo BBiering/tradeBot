@@ -26,4 +26,3 @@ var/
 DS_Store
 *.png
 *.ipynb_checkpoints/
-*.ipynb

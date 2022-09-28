@@ -189,7 +189,7 @@ We'll mostly focus on points 3. and 4.
 
 Large edge funds mostly focus on strategies 3 and 4 cuz they allow to invest a high amount of capital and to allow for new ideas to uncovers complicated signals in expensive hard to get and deal with data.
 
-![Cross-sectional Strategies](/Users/biering/Github/tradeBot/images/cross_sectional_strategies.png)
+![Cross-sectional Strategies](./images/cross_sectional_strategies.png =480x)
 
 **Geographical Momentum**: For companies operating in differents markets, it is possible to predict the movement of the stock in one market based on the moved om the stocks of other markets.
 
@@ -199,7 +199,7 @@ Search for Alpha!
 
 You can find multiple alphas and combine them using machine learning to maximize profit.
 
-![Combining Alphas](/Users/biering/Github/tradeBot/images/combining_alphas.png)
+![Combining Alphas](./images/combining_alphas.png =480x)
 
 
 Risk Model: uncertainty about the future, i.e. variability in returns
@@ -226,7 +226,7 @@ Use **Bayesian methods or ML to perform outlier detection** to smooth out the si
 
 **Box plot**
 
-![Box Plot](/Users/biering/Github/tradeBot/images/boxplot.png)
+![Box Plot](./images/boxplot.png =480x)
 
 **Testing for Normality**:
 * Shapiro-Wilk Test
@@ -366,7 +366,7 @@ Typically:
 variance of log returns: $\sigma_t^2 = \frac{1}{n-1} \sum_{i=1}^{n} (\overline{r} - r_{t-i})^2$
 
 
-![Exponentially Weighted Moving Average of Volatility](/Users/biering/Github/tradeBot/images/ewma_volatility.png)
+![Exponentially Weighted Moving Average of Volatility](./images/ewma_volatility.png =480x)
 
 **Forecasting Volatility**
 
@@ -485,7 +485,7 @@ To verify if two pairs of stocks are cointegrated you can use the **Engle-Grange
    1. if the spread is stationary, the two series are cointegrated
    2. to check if the spread is stationary, use the Augmented Dickey-Fuller test. If p <= 0.05, spread is stationary
 
-**ADF and Roots of the Characteristic Equation ( very optional but kinda cool!)**
+**ADF and Roots of the Characteristic Equation (very optional but kinda cool!)**
 
 So we can change this equation: −−…−=0 Into this: yt​−β1​(Byt​)−…−βt−p​(Bpyt​)=0
 
@@ -502,7 +502,7 @@ Note that for series with more than one lag, we can solve for more than one root
 
 The Augmented Dickey Fuller Test has a null hypothesis that a series has a unit root. In other words, the null hypothesis is that a series is a random walk, which is not stationary. The alternate hypothesis is that the roots of the series are all greater than one, which suggests that the series is stationary. If the ADF gives a p-value of 0.05 or less, we reject the null hypothesis and can assume that the series is stationary.
 
-Engle-Granger Test
+**Engle-Granger Test**
 
 The Engle Granger Test is used to check whether two series are cointegrated. It involves two steps. First, calculate the hedge ratio by running a regression on one series against the other yt​=βxt​ We call the β the “hedge ratio”.
 
@@ -1107,9 +1107,9 @@ The minimum variance portfolio is a single portfolio in the efficient frontier t
 
 Treasury securities are IOUs from a government. They are government debt instruments used to finance government spending as an alternative to taxation. In the case of stable governments, they are considered relatively risk-free. In the U.S., Treasury bills mature in 1 year or less, Treasury notes mature in 2 to 10 years, and Treasury bonds mature in 20 to 30 years.
 
-**Risk-free Asset**: an asset that provides a guarenteed rate of return, with no uncertainty. 
+**Risk-free Asset**: an asset that provides a guaranteed rate of return, with no uncertainty. 
 
-![Efficient Frontier](/Users/biering/Github/tradeBot/images/efficient_frontier.png)
+![Efficient Frontier](./images/efficient_frontier.png =480x)
 
 The Line going from A to B is called the **Market Capital Line**. It's the line connecting the risky portfolio and the risk-free asset.
 
@@ -1187,7 +1187,7 @@ For a visual representation of VaR, we can look at a data distribution that repr
 
 As an example, let’s say we invested $10 million in a stock. We estimate the mean and standard deviation of the stock’s returns and model it with a distribution function (it might be a normal distribution, but there are other models). Then we find the rate of return that defines 5% of the distribution to its left, in the left tail. Let’s say that rate of return is -20%. We multiply that rate of return by the amount that we’re exposed to, which is −0.20 × 10 millions = −2 millions . So the VaR on any given day is $2 million. In other words, we may plan some hedging strategies or hold enough cash to help us handle the possibility of losing $2 million on stock A on any given day. For more detail, and an image of the distribution, check out Wikipedia’s page on Value-at-Risk.
 
-![value at Risk](/Users/biering/Github/tradeBot/images/var.jpg)
+![value at Risk](./images/var.jpg)
 
 **Capital Asset Pricing Model**
 
@@ -1233,7 +1233,7 @@ The Security Market Line is the graphical representation of CAPM and it represen
 The Security Market Line is commonly used to evaluate if a stock should be included in a portfolio. At time points when the stock is above the security market line, it is considered “undervalued” because the stock offers a greater return against its systematic risk. In contrast, when the stock is below the line, it is considered overvalued because the expected return does not overcome the inherent risk.
 The SML is also used to compare similar securities with approximately similar returns or similar risks.
 
-![Security Market Line](/Users/biering/Github/tradeBot/images/sml-chart.png)
+![Security Market Line](./images/sml-chart.png =480x)
 
 **CPAM**
 
@@ -1363,7 +1363,7 @@ Factors can be based on:
 
 **Factor**: list of numerical values, one for each stock, potentially predictive of an aspect of the performance of these stocks in the future.
 
-![Standardized Factors](/Users/biering/Github/tradeBot/images/standardized_factors.png)
+![Standardized Factors](./images/standardized_factors.png =480x)
 
 **Notional**: Gross dollar amount associated with a portfolio
 
@@ -1371,13 +1371,13 @@ A portfolio's notional is the number we can multiply the stock weights by in ord
 
 The goal of making a portfolio dollar neutral is to make it market neutral (zero investments portfolios).
 
-![Notional](/Users/biering/Github/tradeBot/images/notional.png)
+![Notional](./images/notional.png =480x)
 
 **Leverage**: Borrowing to invest in assets
 
 Leverage is the act of borrowing in order to invest. Borrowing cash in order to go long on more positions may magnify gains but also losses.
 
-![Leverage](/Users/biering/Github/tradeBot/images/leverage.png)
+![Leverage](./images/leverage.png =480x)
 
 **Leverage ratio**: $\frac{1}{Notional}*\sum_{i=1}^N |x_i|$, i.e. sum of positions divided by the Notional. 
 
@@ -1386,3 +1386,873 @@ Goal: rescale factor so that leverage ratio equals 1.
 **Standardizing a Factor**
 
 To make a factor dollar neutral, subtract its mean from each position. To make the factor have a leverage ratio of one, divide by the sum of the absolute value of the positions.
+
+# Factor Models and Type Factors
+
+## Factor Model
+
+A factor value is a value that is indicative of the stock future performance.
+
+Linear Factor Model
+
+$r_i = b_{i1}f_1 + b_{i2}f_2 + ... + b_{iK}f_K + s_i$
+
+$r_i =$ the return on asset $i$
+
+$f_1 =$ the value of factor return 1
+
+$b_{i1}=$ the change in the return on asset $i$ per unit change in factor return 1
+
+$K =$ the number of factors
+
+$s_i =$ the protion of the return on asset i not related to the K factors
+
+## Factor Return as Latent Variables
+
+A latent variable is something that is hard to directly measure, like the effect of the market over a set of stocks. What is done to create a single time series for a factor is to create a theoretical portfolio, this portfolio long largecaps and short small caps every day. The time series we seek is the portfolio daily return.
+
+## Terminology
+
+The terminology used to describe factor models varies widely. Here are some common phrases used to refer to the components of the model.
+
+Factor returns (the $f_{K}s$) may be:
+
+* macro-economic variables
+* returns on pre-specified portfolios,
+* returns on zero-investment strategies (long and short positions of equal value) giving maximum exposure to fundamental or macro-economic factors,
+* returns on benchmark portfolios representing asset classes,
+* or something else.
+
+The $b_{ij}$ coefficients may be called:
+
+* factor exposures,
+* factor sensitivities,
+* factor loadings,
+* factor betas,
+* asset exposures
+* style
+* or something else.
+
+The $s_i$ term may be called:
+
+* idiosyncratic return,
+* security-specific return,
+* non-factor return,
+* residual return,
+* selection return
+* or something else.
+
+## Factor Model Assumptions
+
+$Corr(s_i, f_k) = 0$ for every $i$ and $k$
+
+$Corr(s_i, s_j) = 0$ for every $i$ and $j$
+
+Residual $s_i$ is specific or "idiosyncratic" to asset $i$
+
+
+## Covariance Matrix using Factor Model
+
+Covariance matrix of returns using:
+
+$r_i = b_{i1}f_1 + b_{i2}f_2 + ... + b_{iK}f_K + s_i$
+
+**Assumptions**:
+
+$Corr(s_i, f_k) = 0$ for every $i$ and $k$
+
+$Corr(s_i, s_j) = 0$ for every $i$ and $j$
+
+First we subtract the mean of every asset RV its mean
+
+$r=\left[ \begin{array}{c}
+     r_1 \\ r_2 \\ ... \\ r_N \end{array} \right]$
+
+$B= \left[ \begin{array}{ccc}
+     B_{1,1} & ... & B_{1,K} \\ ... & ... & ... \\ B_{N,1} & ... & B_{N,K} \end{array} \right]$
+
+$f=\left[ \begin{array}{c}
+     f_1 \\ f_2 \\ ... \\ f_K \end{array} \right]$
+
+$s=\left[ \begin{array}{c}
+     s_1 \\ s_2 \\ ... \\ s_N \end{array} \right]$
+
+$N=$ number of companies
+
+$K=$ number of factors
+
+Cov Matrix $= E[rr^T]$
+
+$E[rr^T] = E[(Bf + s)(Bf+ s)^T]$
+
+$E[rr^T] = BFB^T + S$
+
+$S$ is a diagonal matrix cuz the asset's residuals are uncorrelated so their covariance is 0.
+
+## Factor Models in Quant Finance
+
+Most practitioners don't use factor models to explicitely model assest returns but when devising and testing trading strategies the models are typically used slightly differently.
+
+Return: $r = Bf + s$
+
+Risk: $E(rr^T) = BFB^T + S$
+
+We wanna use these terms in a **portfolio optimization problem**. Quants make some simplifications:
+
+Let's take the matrix of factor exposures, each term in this matrix represents the sensitivity of an individual asset to a specific factor return. A portofolio with weights $X$ has a portoflio factor exposure of $BX^t$. Now let's say that we think that there are two types of factors, one is predictive of the mean of distribution of returns (alpha factors) and the other type is predictive of the variance (risk factors) of the distirbutions of returns.
+
+We'd rather our portfolio to be minimally exposed to **risk factors, the drivers of volatility**. We can try to make this happen by placing constraints on $BX^T$ that only apply to risk factors. We do this in the constraint section of the optimization problem. This will specifically reduce the exposure of our portoflio to these risk factors. However we don't constraint the factors that are drivers of the mean returns so we drop them from $B$. Hence we can think of $B$ as the risk factor loading matrix only. The alpha factors aren't kept in here cuz we're not gonna constraint them the way we do with risk factors.
+
+What about $f$ and $S$?
+
+We think about $f$ as the covariance matrix of factor returns that have large impact on variance across all stocks. And we think of $S$ as the variance that's left over. In fact, we define risk factors precisely as factors that have large impact on variance across all stocks. So we include only the risk factors in F, anything that's left over like variance from the alpha factors that we took account and everyhting that we can't explain is included in S. **We can use $F$ and $S$ together to constraint portofilio risk** .
+
+The key takeaway, is that in practice $B$ and $F$ only contains information about risk factors. $s$ doesn't say anything about alpha. Usually practitioners will buy $B$, $F$ and $s$ from a commercial provider. Adn we understand why it is sufficient, it's because we don't to mix our alpha and risk factors.
+
+What do we do with the alpha factors? We add them to the objective function in the optimization problem.
+
+## Risk factors vs Alpha factors
+
+In general, risk factors are significant contributors to the variance of asset returns, and less predictive of the mean of returns. Risk factors are identified to control risk. One way to do control an asset's exposure to a risk factor is to hold an equal amount long as short. For instance, a dollar neutral portfolio with equal amounts long and short is controlling for risks that the overall market may move up or down.
+
+In general, factors that are significant in describing the mean of asset returns can be candidates for alpha factors. Alpha factors are used to give some indication of whether each stock in the portfolio may have positive expected returns or negative expected returns. For example, a former alpha factor was the market capitalization of a stock. Small cap stocks tend to have higher future returns compared to large cap stocks.
+
+* Stock return is modeled with alpha factors plus risk factors
+* Factors help describe distribution of future returns
+* Factors may be predictive of the mean
+* Factors may be predictive of the variance
+
+**Risk factors**
+
+These factors significantly explain the variance of expected returns. Use risk factors to control the exposure of your portfolio to risk. 
+
+**Alpha factors**
+
+Predictive factors that are significant in describing the mean of asset returns. Use alpha factors as signals of expected returns (buy or sell signals).
+
+**Other factors**
+
+Not usefull for predicting either mean or variance of expected returns.
+
+
+## Risk factors vs Alpha factors - Part 2&3
+
+**Characteristics of risk factors and alpha factors**
+
+Usually, we'd choose 20 to 60 risk factors that describe overall stock variance as much as possible. So risk factors as a whole account for more of the overall movement of stocks.
+
+On the other hand, alpha factors contribute to smaller movements of stocks, which is okay, because we seek to identify these alpha factors because they give some indication of the direction of expected returns, even if they're small compared to risk factors.
+
+An important reason why it's important to identify risk factors and then neutralize a portfolio's exposure to risk factors is that if we didn't, the asset movements due to risk factors would overwhelm the movements that are due to the alpha factors.
+
+**Risk factors are well-known**
+
+Risk factors are well-known by the investment community, so investors will track those factors when optimizing their portfolios. This also means that it's unlikely that any one investor can gain a competitive advantage (higher than normal returns) using risk factors.
+
+Attributes of of risk vs alpha factors:
+
+1. contribution to stock price movement
+2. set of rsik factors contributes more to total return
+3. each alpha factor contributes a smaller part of the total return
+4. this is why we wanto to neutralize exposure to risk factors
+5. public awareness of risk factors
+6. example factor: "size"
+7. risk factors are well known so investors trade away the mispricing due to the known risk factors
+8. risk factors are not used to enhance portfolio returns
+
+
+## Risk factors vs Alpha factors - Part 4
+
+1. Alpha factors are not as well known as risk factors.
+2. Hypothetical alpha factor: "maximum one-day return over past month"
+3. Can use alpha factors to seek better than average performance
+4. Alpha factors are considered drivers of the mean of portfolio return
+
+**Alpha factors are proprietary**
+
+Alpha factors are less well-known by the investment community, because they're generated by in-house research to help the fund generate higher than normal returns. So alpha factors are said to be drivers of the mean of returns because they're used to help push a portfolio's overall returns higher than what would be expected from a passive buy and hold strategy.
+
+
+## How an alpha factor becomes a risk factor
+
+When alpha factors to be known in the community they slowly become risk factors!
+
+**Alpha factors becoming risk factors**
+
+An alpha factor that is generated by internal research in a fund can help that fund seek a competitive advantage in the market. If the proprietary factor isn't yet discovered by the rest of the investment community, most others won't act on that signal when making investment and trading decisions.
+
+Alpha factors usually lose their effectiveness over time. One possible reason is that as other funds also discover the factor, and make investment decisions based on its signal, then the above-average gains or arbitrage opportunities get diffused as they're shared by a growing number of market participants. Eventually, if a factor becomes very well known and most investors are acting on its signal, then the factor can be considered more of a risk factor.
+
+Among quants, you may hear the joke that "your alpha factor is my risk factor," since it's up to each fund to decide whether to use a factor to control risk or to drive returns.
+
+If factor signal indicates positive future returns, it suggests current market price is lower than expected future price. Ideally buy before the price rises. If other investors also buy based on the same signal it may push the price upwards before you buy it.
+
+Well known factors doesn't help drive the mean of investment returns, instead it's triggering the market price to move.
+
+Good alpha factors find mispricing and help us seek a competitive edge. When known factors no longer drive mean of return but drive variance -- then become risk factors.
+
+## Momentum vs Reversal
+
+![Momemtum vs Reversal](./images/momentum_vs_reversal.png =480x)
+
+Momemtum factor = 1 year return
+
+Reversal factor = - weekly return
+
+## Price volume factor
+
+One of the most commonly used data sources for quant trading is the stock price and volume (aka. price-volume or technical factors). It can include everthing from a quotes and trade feed:
+
+* adjusted or unadjusted prices
+* open, high, low, close
+* different frequencies
+* bid-ask quotes
+
+Using this data we can calculate quantities for which you need to define a time window, like returns:
+* day, week, month, year frequency
+* seconds, minutes, hours frequency
+* from close to close, from open to close, from close to open etc.
+
+Operations on distribution of returns:
+
+* mean: $\mu=E[r]$
+* variance: $\sigma^2=E[(r-\mu)^2]$
+* skew: $\gamma^2=E[(\frac{r-\mu}{\sigma})^3]$
+* kurtosis: $\kappa^2=E[(\frac{r-\mu}{\sigma})^3]$
+
+![Distribution Stats](./images/distribution_stats.png =480x)
+
+## Volume factors
+
+Categorize volume as "net buy" or "net sell"
+
+* Low volume: price movement signal may not be as significant
+* High volume: price movement signal may be more significant
+
+Paricularly with momentum based strategy.
+
+Short interest:
+
+Mark to market:
+
+Short squeeze:
+
+Long squeeze:
+
+Short squeeze: add upwards momentum
+
+Example ALpha factor: high price momentum conditioned on high short interest
+
+
+## Fundamentals
+
+Usually taken from financial statements which are updated every 3 months (quarter). Higher capacity and lower turnover.
+
+Ex: Market cap "size" factors
+
+Prefer $\frac{earnings}{price}$ instead of $\frac{price}{earnings}$. $\frac{book}{price}$ can also be used. Some other factors try to remove accounting choices, such as Cash Flow or EBITDA. They can however be more volatile but are more objective. 
+
+## Event-driven factors
+
+* Natural Disasters
+* Government changes
+* Interest rate changes
+* M&A
+* Spin-offs
+* New products announcements
+* Index add/delete
+* Earnings releases
+* Earnings guidance
+* Product announcements
+
+## Index Changes
+
+Funds update when indexes change.
+
+## Pre- and Post- events
+
+Earnings announcement 
+
+Pre-event trading: we can use analysts sentiment and fundamentals to assess if the performance falls short or exceeds expectations.
+
+Post-event trading
+
+Post-earnings announcement drift: sometimes even if the earnings are not what was expected the share price keeps going in the same direction for a while (2 months). This factor is actually well known.
+
+## Analyst ratings
+
+"Sentiment" factor
+
+Rating scales differ
+
+Look for ratings changes
+
+Herd mentality
+
+"Star" analyst
+
+Upgrades - downgrades
+
+## Alternative data
+
+
+## Sentiment Analysis on News and SoMe
+
+
+## NLP used to enhance Fundamentals Analysis
+
+[Sector Classification using 10-Ks](https://www.winton.com/research/systematic-methods-for-classifying-equities)
+
+Analyze 10-K forms using NLP. Potential application is sector classification, as the sector helps predicting the price movement.
+
+## Other alternative data
+
+
+
+# Risk Factor Models
+
+![Risk Factor Model](./images/risk_factor_model.png =480x)
+
+## Motivation for Risk Factor Models
+
+Volatility is a measure of risk. Variance is just the volatility squared.
+
+The risk factor model addresses the problem of estimating the volatility of a portfolio suffering from the curse of dimensionality. Ex: if your portfolio contains 9000 stocks, the covariance matrix will contain 40.5 million values of variance and covariance to estimate which is too much to compute.
+
+![Covariance Matrix of Assets](./images/covariance_matrix_assets.png =480x)
+
+## Historical Variance exercise
+
+**Factor Model of Return**
+
+An asset's return can be modeled as the contribution from a set of factors, plus the specific return (the part that isn't explained by the factors).
+
+![Risk Factor Model](./images/factor_model_return.png =480x)
+
+## Factor Model of Portfolio Return
+
+![Factor Portfolio Return](./images/factor_portfolio_return.png =480x)
+
+
+## Preview of Portfolio Variance Formula
+
+![Factor Model of Portfolio Variance](./images/factor_model_portfolio_variance.png =480x)
+
+## Variance of one stock
+
+![Variance of one stock](./images/variance_one_stock_1.png =480x)
+
+![Variance of one stock](./images/variance_one_stock_2.png =480x)
+
+## Variance of two stocks
+
+
+
+## Portfolio Variance using Factor Model
+
+$Var(r_{p})=X^T(BFB^T + S)X$
+
+Where,
+
+$F =  \begin{bmatrix} 
+Var(f_1​) &Cov(f_1, f_2​) \\
+​Cov(f_2, f_1​) &Var(f_2​)
+\end{bmatrix}$
+
+$B =  \begin{bmatrix} 
+\beta_{i,1} &\beta_{i,2}\\
+\beta_{j,1} &\beta_{j,2}
+\end{bmatrix}$
+
+$B^T =  \begin{bmatrix} 
+\beta_{i,1} &\beta_{j,1}\\
+\beta_{i,2} &\beta_{j,2}
+\end{bmatrix}$
+
+$S =  \begin{bmatrix} 
+Var(s_i) &0\\
+0 &Var(s_j)
+\end{bmatrix}$
+
+$X =  \begin{bmatrix} 
+x_i\\
+xj
+\end{bmatrix}$
+
+$X^T =  \begin{bmatrix} 
+x_i & xj
+\end{bmatrix}$
+
+
+## Portfolio Variance using Factor Model
+
+
+Types of Risk Models:
+
+* Time Series Risk Models
+  * capital asset pricing model
+  * Fama french 3 factor model
+* Cross Sectional Risk Models
+* PCA Risk Models
+
+
+# Time Series and Cross-functional risk models
+
+## Time Series Model: Factor Variance
+
+**Covariance Matrix of Factors**
+
+We'll collect a time series that represents the chosen factor. In this case, our factor is "market excess return", so we can use an index (such as the S&P500) and subtract a time series that represents the risk-free rate, such as the three-month US Treasury Bill rate. Calculating the variance of this market excess return helps us fill in the covariance matrix of factors.
+
+The analysis window depends on the application, for daily trading a window of a couple of weks may suffie whereas for long term trading, 2-3 years might be needed.
+
+![Factor Variance](./images/factor_variance.png =480x)
+
+## Time Series Model: Factor Exposure
+
+**Factor Exposure**
+
+We can use regression to calculate the factor exposures in a time series model. We'll use the asset's excess return as the dependent "y" variable, and the factor return (in this case, market excess return) as the independent "x" variable. The estimated coefficient from the regression is an estimate of the asset's "exposure" to that factor.
+
+![Factor Exposure](./images/factor_exposure.png =480x)
+
+CAPM:
+
+The CAPM model assumes that the stock's excess return above the risk-free rate can be modeled as it's exposure to the market's excess return above the risk-free rate multiplied by the market's excess return above the risk-free rate. 
+
+$r_i - r_f = \beta_{i,1}*(r_m - r_f) + c_i$
+
+where,
+
+* $r_i - r_f$: stock excess return above the risk-free rate
+* $r_m - r_f$: $f_m$ or market excess return above the risk-free rate
+* $\beta_{i,1}$: market exposure or factor exposure
+
+## Time Series Model: specific variance
+
+**Specific Return**
+
+To get the specific return, take the difference between the actual return and estimated return.
+ 
+![Specific Return](./images/specific_return.png =480x)
+
+## Time Series Risk Model
+
+$Var(r_p)=X^T(BFB^T + S)X$
+
+where $BFB^T + S$ is the covariance matrix of assets. It's the plug and play componentthat can be inserted into various portfolios that contained a subset of the assets contained in that matrix
+
+## Size
+
+**Theoretical Portfolios**
+
+If we had a hypothesis that a particular attribute affects returns, we could try to quantify that using a theoretical portfolio. It's common to use a dollar neutral theoretical portfolio, which means we'd have an equal dollar amount long as short. We'd go long on assets that have more of a particular trait that may improve returns, and go short on assets that have less of that trait. This is a way to create a "measurement" of how that attribute influences returns.
+
+Fama french 3 factor model contains three factors *market*, *size* and *value*.
+
+## SMB
+
+SMB: Small Minus Big
+
+To create a theoretical portfolio representing size, we could go long the bottom 10th percentile of stocks by market cap (long small cap stocks) and go short stocks above the 90th percentile (go short the large cap stocks). We could assume an equal dollar amount invested in each stock. In the above example, we are dividing by 2 to take the average return of going long small cap stocks and going short large cap stocks.
+
+It's also common to compute the spread between two portfolios. One portfolio contains the small cap stocks, and the other portfolio contains the large cap stocks. In this case, we'd just take the difference between the returns of the two portfolios.
+
+![SMB](./images/smb.png =480x)
+
+## Value (HML)
+
+HML: High Minus Low
+
+This factors looks at the market value compared to their book value.
+
+![HML](./images/hml.png =480x =480x)
+
+## Fama French SMB and HML
+
+Fama French SMB and HML
+
+$SMB=\frac{1}{3}((r_{s,v} + r_{s,n} + r_{s,g}) - (r_{b,v} + r_{b,n} + r_{b,g}))$
+
+$HML=\frac{1}{2}((r_{s,v} + r_{b,v}) - (r_{s,g} + r_{b,g}))$
+
+![Fama French 3 Factor Model Logic](./images/fama_french_logic.png =480x =480x)
+
+![Fama French 3 Factor Model](./images/fama_french_3_factor_model.png =480x =480x)
+
+
+## Fama French Risk Model
+
+**Matrix of Factor Returns**
+
+Calculate the covariance matrix using the time series of factor returns.
+
+![Fama French Cov Matrix](./images/fama_french_cov_matrix.png =480x =480x)
+
+**Matrix of Factor Exposures**
+
+Use a multiple regression to estimate the factor exposures.
+
+![Fama French Factor Exposure](./images/fama_french_factor_exposure.png =480x)
+
+**Specific Variance**
+
+![Fama French Specific Variance](./images/fama_french_specific_var.png =480x)
+
+Calculate the actual minus estimated returns as the specific return. The variance of that time series is an estimate of specific variance.
+
+## Cross Sectional Model
+
+Practioners tend to buy and use risk models developed and maintained by other companies.
+
+A cross-section means that we use multiple stocks for a single time period in a calculation. In contrast, a time series is looking at a single stock over multiple time periods.
+
+A cross-sectional model calculates the factor exposure first, and then uses that information to estimate the factor return.
+
+![Cross Sectional Model](./images/cross_sectional_model.png =480x)
+
+## Categorical Factors
+
+One-hot encoding
+
+## Categorical Variable Estimation
+
+**Estimating Factor Return**
+
+If we collect a cross-section of multiple stocks for a single time period, then we'll have pairs of stock returns and factor exposures. We can use regression to estimate the factor return for that single time period. Then repeat over multiple time periods to get a time series of factor returns.
+
+![Estimating Factor Return](./images/factor_return_estimation.png =480x)
+
+## Cross Section: Specific Variance
+
+**Specific Return**
+
+For each time period, we can calculate the specific return as the difference between actual stock return and estimated stock return (using the estimated factor return). Do this for multiple time periods to get a time series of specific return.
+
+![Specific Return](./images/cross_section_specific_return.png =480x)
+
+## Fundamental Factors
+
+In a cross-sectional risk model, the fundamental data calculated on a company, based on its financials, can be used as the factor exposure of that company, to that factor. We can use regression on a cross-section of stocks to estimate the factor return.
+
+![Fundamental Factors](./images/fundamental_factors.png =480x)
+
+Cross-sectional models are widely used in the industry, most often bought off the shelve  whereas time series are more used in academia. The risk of building a risk model yourself is to ensure some assumptiions like the specifc risks are independent from each other etc. A third approach is using PCA. Practitioners prefer to spend time finding alpha factors instead of building a risk model.
+
+# 26. Risk Factor Models with PCA
+
+
+
+# 27. Alpha Factors
+
+1.
+**Alpha factors**: signals for relative performance of stocks.
+
+Search for alpha factors is the search for **deviations from the efficient market hypothesis** (assets are priced fairly). We are looking for things like mispricing and arbitrage.
+
+Processing Techniques:
+* Sector neutralization
+* Ranking
+* Z-scoring
+* Smoothing
+* Conditioning
+
+Evaluation techniques:
+* Sharpe ratio
+* Information coefficient
+* Information Ratio
+* Turnover analysis
+
+3. Alpha Factors versus Risk Factor Modeling
+
+Goal: use risk models to neutralize exposure to risk factors, so that remaining portfolio returns and volatility are due to alpha factors.
+
+Alpha factors contain information about price movement that is not due to common risk factors.
+
+4. Definition of keywords
+
+**Alpha model is an algorithm that transforms data numbers associated with each stock.**
+
+Alpha value refers to a single value for a single stock, for a single time period.
+
+Alpha vector has a number for each stock, and the number is proportional to the amount of money we wish to allocate for each stock.
+
+Alpha factor: a time series of alpha vectors (over multiple time periods).
+
+Raw alpha factor: a version of an alpha factor before additional processing.
+
+Stock universe: set of stocks under consideration for the portfolio.
+
+
+6. Controlling for Risk within an Alpha Factor Part 1
+
+We want portfolios to be neural to common risk factors. Most significant risks are market risks and sector risks. We make the important assumption that the betas or exposures of the stocks to the market, are all one.
+
+Dollar neutral: substract the mean from each alpha value in the vector so that its values sum to zero.  
+
+
+7. Controlling for Risk within an Alpha Factor Part 2
+
+How to we control for sector risk?
+
+Substract the sector mean from each weight so that the sum of the short weights in the sector are equal in magnitude to the long weights in the sector. 
+
+
+9. Rank Part 1
+
+In order to deal with outliers or high variation with the alpha values, eg strong increase one day and strong decrease the next day, we can **winsozrize** the alpha value, i.e. cap the values above 95th percentile with the 95th percentile's value and same with values below the 5th percentile.
+
+Transform alpha signal to be less sensitive to noise and outliers and to avoid excessive trades.
+
+10. Rank Part 2
+
+Instead of using the alpha values, use their ranks which is robust to noise.
+
+13. Z-score
+
+Ranking:
+* makes our alpha vectors more robust against outliers and noise
+* best ot use when all alpha vectors are generated from the same stock universe
+
+Z-Scoring
+* not robust against outliers and noise
+* useful to apply ranking and then z-scoring when alpha vectors are generated from different stock universes
+* standardized for all quants and portfolios
+
+16. Smoothing
+    
+![Smoothing](./images/smoothing.png =480x)
+
+19. Factor Returns
+
+Evaluation metrics:
+* Factor returns
+* Sharpe ratio
+* Information coefficient
+* Information ratio
+* Quantile analysis
+* Turnover analysis
+
+The **factor return** measures the returns of your portfoliotaht is due to the alpha vector.
+
+![Factor Return](./images/factor_return.png =480x)
+
+Repeat for multiple days to get a time serie of factor returns.
+
+This is usefull to compare factor return to each other.
+
+23. Universe construction rule
+
+You have to avoid biases like look-ahead bias (using information not available at the time of the trade) such as survivorship bias (excluding companies that went bankrupt or got bought).
+
+24. Return Denominator, Leverage, and Factor Returns
+
+**Return Denominator**
+
+$R_D = \sum_{t=1}^T |\alpha_t|$
+
+**Leverage** is the act of borrowing money
+
+$L_R = \frac{positions}{capital}$
+
+27. Sharpe Ratio
+
+Sharpe Ratio = risk adjusted return
+
+$S = \frac{mean(f)}{Stdev(f)}$
+
+Alpha factors with a higher Sharpe ratio are preferred
+
+30. Ranked Information Coefficient (Rank IC) : Part 1
+
+Rank IC tells us whether there is a correlation between the ranks of our alpha values and the ranks of the future returns.
+
+31. Ranked Information Coefficient (Rank IC) : Part 2
+
+Spearman Correlation:
+
+$r_s(X,Y) = \frac{Cov(r(X),r(Y))}{Stdev(r(X))\times Stdev(r(Y))}$
+
+Rank IC:
+
+$rank IC_{t-1} = r_s(\alpha_{t-1}, r_{t,t+1}$)
+
+34. The Fundamental Law of Active Management: Part 1
+
+return = systematic return + specific return (residual)
+
+$r=\sum_{k=1}^K (\beta_kf_k)+s$
+
+$IR = \sqrt{252}\times \frac{mean(s)}{Stdev(s)}$
+
+The Fundamental Law of Active Management
+
+$IR = IC\times \sqrt{B}$
+
+In reality this formula is more of a guide and the relationship is not equal but proportional.
+
+IR: Information Ratio
+IC: Information Coefficient
+B: Breadth
+
+35. The Fundamental Law of Active Management: Part 2
+
+**Insights from Jonathan Larkin**
+
+Now we see that it we want to increase IR, we need to increase either or both of IC and B. But what are these two mysterious terms? IC is skill and B is breadth. IC is the information coefficient as we learned above. It makes perfect sense that if you have better skill at making predictions, then you will have a better strategy and higher Sharpe Ratio right?
+
+When first coming to quant finance, people typically stop there. They spend all their time trying to increase the quality of a narrow set of forecasts. Of course this is important, but I’ll let you in on something well known in the industry, but not so when known outside: the IC for even the best quants in the world is relatively not very high. In fact, you might be surprised to learn that the count of profitable trades as a ratio to all trades (a measure similar in spirit to IC) by the best, well-known quants is typically just a bit higher than 50%. And if that’s surprising, I’ll tell you something else which might shock you: in general, great discretionary investors have the advantage over great quants when it comes to IC. Quants however, have an advantage when it comes to breadth.
+
+Breadth (Br): number of independent trading opportunities per year.
+
+To maximize number of independent bets, we need to remove exposure to risk factors.
+
+Two ways to improve the performance (information ratio):
+
+1. improve alpha factor (IC - Information Coefficient - Challenging)
+2. increase number of independent bets (breadth) 
+
+36. Real World Constraints: Liquidity
+
+Constraints:
+
+* Liquidity
+* Transaction Costs
+
+Bid-Ask Spread is low for highly liquid stocks, like 3 or 5, but can be high for less liquid stocks like 20 or 30 basis points.
+
+37. Real World Constraints: Transaction Costs
+
+Real world transcation costs can diminish the performance of an alpha factor so we want some way to evaluate an alpha factor potential impact on a portfolio total transaction cost.
+
+38. Turnover as a Proxy for Real World Constraints
+
+$Turnover = \frac{Value of Trades}{Portfolio Value}$
+
+$|x_{t1}-x_{t2}| = \left| \left(\begin{array}{c} x_{t1,1} \\ x_{t1,2} \\ ... \\ x_{t1,n} \end{array} \right) - \left(\begin{array}{c} x_{t2,1} \\ x_{t2,2} \\ ... \\ x_{t2,n} \end{array} \right) \right|$
+
+$turnover= |x_{t1,1} - x_{t2,1}| + ... + |x_{tn-1,1} - x_{tn,1}|$
+
+**39. Factor Rank Autorrelation**
+
+High FRA -> Low turnover
+
+Low or negative FRA -> High turnover (what we want)
+
+*FRA is different than Rank IC, even though they both use ranking and correlation, Rank IC is measuring whether an alpha factor is correlated with forward returns while FRA is measuring how stable the ranked alpha vectors are from day to day.*
+
+**41. Quantile Analysis Part 1**
+
+Divide the alpha vector by quantiles and anlayze the returns and volatility within those quantiles.
+
+**42. Quantile Analysis Part 2**
+
+Sloan's accrual anomaly
+
+[Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings? -- Richard Sloan](https://econ.au.dk/fileadmin/Economics_Business/Education/Summer_University_2012/6308_Advanced_Financial_Accounting/Advanced_Financial_Accounting/2/Sloan_1996_TAR.pdf)
+
+**45. Quantiles: Academic Research vs. Practitioners**
+
+Goal of academic research:
+
+* Detect a broadly applicable market phenomenon
+
+Goal of a practitioner:
+
+* Generate trade decision for each stock in the portfolio
+
+**46. Transfer Coefficient**
+
+We prefer to control for risk within the alpha factors rather than waiting for the risk model optimizer to do it completely for us. This is why we make the alpha vector dollar neutral and often also sector neutral. The reason for which we prefer to control for risk early on within the alpha vector itself is so that after the optimization the portfolio weights are not too different from the original alpha vectors.
+
+> Controlling risk within the alph vector prevent significant changes in the weights after optimization. Significant changes in the weights after optimization affect the performance of the alpha vector.
+
+To address that issue, we can calculate the:
+
+> The **Transfer Coefficient** measures how closely teh optimized portfolio weights match the orignal alpha vector.
+
+To get the transfer coefficient we need to use portfolio optimization that includes a risk factor model.
+
+> Transfer Coefficient = corr($\alpha$, $x$)
+
+* $\alpha$ = alpha vector
+* $x$ = portfolio optimized weights
+
+49. Conditional Factors
+
+Conditional Factors: $Factor_A \times Factor_B$
+
+Markets have become very competitive, so it's more likely that you need to develop conditional alpha factors if you wanna succeed.
+
+
+**50. Summary**
+
+![Summary 1](./images/alpha_factor_summary_1.png =480x)
+![Summary 2](./images/alpha_factor_summary_2.png =480x)
+
+# Alpha Factor Research Methods
+
+Papers discussed in this section:
+
+* [Overnight Returns and Firm-Specific Investor Sentiment](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2554010)
+* [The Formation Process of Winners and Losers in Momentum Investing](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2610571)
+* [Expected Skewness and Momentum](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2600014)
+* [Arbitrage Asymmetry and the Idiosyncratic Volatility Puzzle](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2155491)
+
+# Advanced Portfolio Optimization
+
+2. Setting Up the Problem: Risk
+
+> Objective function: $minimize: -\alpha^Tx$
+
+To calculate the portfolio alpha, we just take the dot product of the alpha with the vector of portfolio weights. We make it negative because we want to maximize alpha.
+
+3. Setting Up the Problem: Risk
+
+One option is to place a constraint on the portfolio variance. We already know how to calculate the portfolio covariance matrix usinga risk model:
+
+> Portfolio Covariance Matrix: $B^TFB+S$
+
+> Portfolio Variance: $x^T(B^TFB+S)x$
+
+where $x$ is the weight vector. We can set a constraint by stating that the portfolio variance has to be below a certain value $c$. $c$ is set manually based on how much you are willingly to loose. Volatility typically ranges from 12% to 4-5% for managed hedge funds.
+
+4. Regularization
+ 
+> Objective function: $minimize: -\alpha^Tx + \lambda ||x||_2$
+
+where $\lambda ||x||_2$ is the $L_2$ norm of the portfolio weights (regularization term).
+
+5. Standard Constraints
+
+If the portfolio is *long* only, then we could required to have only positive portfolio weights:
+
+$x \succeq 0$ means inequality for each element in the x vector.
+
+It's common to have a portfolio that is market neutral, meaning that we short as much capital as we long. This can be set up as a constraint that is enforced by the optimization:
+
+> $\sum_{i}x_i = 0$
+
+6. Leverage Constraint
+
+> $\sum_{i} |x_i| \leq 1$
+
+A finance position is said **leveraged** if it is financed by a debt position (borrowed cash or stocks).
+
+7. Factor Exposure and Position Constraints
+
+You can also limit the exposure to individual factors.
+
+$B^Tx \preceq K_{max}$
+
+$B^Tx \succeq K_{min}$
+
+$K_{max}$ and $K_{min}$ come from business and risk mandates.
+
+It's also common to impose constraints on the individuals weights themselves:
+
+$x \preceq u_{max}$
+
+$x \succeq u_{min}$
+
+
